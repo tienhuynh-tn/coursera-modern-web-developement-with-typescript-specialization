@@ -147,3 +147,33 @@ enum Status {
 console.log("Status Success:", Status.Success);
 console.log("Status NotFound:", Status.NotFound);
 console.log("Status ServerError:", Status.ServerError);
+
+// Function type declaration
+function greet(name: string): string {
+    return `Hello, ${name}!`;
+}
+console.log(greet("Alice"));
+function add(a: number, b: number): number {
+    return a + b;
+}
+console.log("Sum:", add(5, 10));
+function introduce(name: string, age?: number): string {
+    if (age !== undefined) {
+        return `${name} is ${age} years old.`;
+    }
+    return `${name} chose not to share their age.`;
+}
+console.log(introduce("Alice", 25));
+console.log(introduce("Bob"));
+function multiply(a: number, b: number = 2): number {
+    return a * b;
+}
+console.log("Multiply with default: ", multiply(5));
+console.log("Multiply custom: ", multiply(5, 3));
+const square = (x: number): number => x * x;
+console.log("Square of 4:", square(4));
+let operation: (x: number, y: number) => number;
+operation = add;
+console.log("Operation (Add):", operation(10, 20));
+operation = multiply;
+console.log("Operation (Multiply):", operation(10, 4));

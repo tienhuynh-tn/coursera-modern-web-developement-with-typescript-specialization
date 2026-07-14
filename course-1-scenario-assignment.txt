@@ -1,0 +1,8 @@
+1. TypeScript adds static typing to JavaScript, allowing developers to catch type-related errors during development instead of at runtime. It also improves code readability, maintainability, and provides better IDE support such as auto-completion and error detection.
+
+2. 
+const userName: string = "Alice";
+const age: number = 25;
+const isActive: boolean = true;
+
+3. TypeScript can reduce bugs by detecting type mismatches before the code is executed. This helps developers identify errors early and makes the codebase easier to maintain as the project grows.
